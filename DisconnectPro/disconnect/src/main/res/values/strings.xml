@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Disconnect Premium</string>
+    <string name="tab_title_news">News</string>
+    <string name="tab_title_alerts">Alerts</string>
+    <string name="tab_title_learn">Learn</string>
+    <string name="tab_title_protection">Protection</string>
+    <string name="cancel">Cancel</string>
+    <string name="recent_trackers">Recent Trackers</string>
+    <string name="blocked_on">Blocked on %s</string>
+
+    <string-array name="locations">
+        <item>Silicon Valley, California, USA</item>
+        <item>New York metropolitan area, USA</item>
+        <item>Atlanta, Georgia, USA</item>
+        <item>London UK, England</item>
+        <item>Frankfurt, Germany</item>
+        <item>Tokyo, Japan</item>
+        <item>Singapore, Republic of Singapore</item>
+    </string-array>
+    <string-array name="server_addresses">
+        <item translatable="false">silicon-valley.us.v1.ds-secure.net</item>
+        <item translatable="false">new-jersey.us.v1.ds-secure.net</item>
+        <item translatable="false">atlanta.us.v1.ds-secure.net</item>
+        <item translatable="false">london.eu.v1.ds-secure.net</item>
+        <item translatable="false">frankfurt.eu.v1.ds-secure.net</item>
+        <item translatable="false">tokyo.as.v1.ds-secure.net</item>
+        <item translatable="false">singapore.as.v1.ds-secure.net</item>
+    </string-array>
+    <string-array name="default_server_addresses">
+        <item translatable="false">NA|new-jersey.us.v1.ds-secure.net</item>
+        <item translatable="false">EU|london.eu.v1.ds-secure.net</item>
+        <item translatable="false">AS|tokyo.as.v1.ds-secure.net</item>
+        <item translatable="false">AF|london.eu.v1.ds-secure.net</item>
+        <item translatable="false">OC|tokyo.as.v1.ds-secure.net</item>
+        <item translatable="false">SA|new-jersey.us.v1.ds-secure.net</item>
+        <item translatable="false">AN|london.eu.v1.ds-secure.net</item>
+    </string-array>
+
+    <string name="default_tracker_description">Tracking is the collection of data regarding a particular user\'s activity across multiple websites or applications that aren’t owned by the data collector, and the retention, use or sharing of that data.</string>
+
+    <!-- Time ago strings -->
+    <string name="just_now">just now</string>
+    <string name="yesterday">yesterday</string>
+    <string name="new_button">New</string>
+    <string name="duration">Duration</string>
+    <string name="news_title">Privacy and Security News</string>
+    <string name="alerts_title">Privacy Alerts</string>
+    <string name="learn_title"><![CDATA[Privacy & Protection Tips]]></string>
+    <string name="protection_title">Device Protection</string>
+    <plurals name="minutes_ago">
+        <item quantity="one">a minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="one">an hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">a day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+
+    <!-- Settings strings -->
+    <string name="setting_info">Info</string>
+    <string name="settings_reporting">Privacy Reporting</string>
+    <string name="settings_notification">Notifications</string>
+    <string name="settings_account">Account Settings</string>
+    <string name="settings_restore">Restore Purchases</string>
+
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_terms">Terms of Use</string>
+    <string name="settings_support">Support</string>
+
+    <string name="setting_purge_database">Purge Tracker Database</string>
+    <string name="tracker_database_purged">Tracker Database Purged</string>
+    <string name="stats_label_blocked">Blocked</string>
+    <string name="stats_label_trackers">Trackers</string>
+    <string name="stats_label_time">Time</string>
+    <string name="stats_label_seconds">Second(s)</string>
+    <string name="stats_label_data">Data</string>
+    <string name="stats_label_mb">MB</string>
+    <string name="stats_label_1d">1D</string>
+    <string name="stats_label_1w">1W</string>
+    <string name="stats_label_1m">1M</string>
+    <string name="stats_label_all">ALL</string>
+    <string name="start_up_error_message">Unable to start application. Please check your network connection</string>
+    <string name="okay">OK</string>
+    <string name="upgrade_error_message">Unable to apply upgrade code. Please check your network settings</string>
+    <string name="posts_error_message">Unable to refresh list. Please check your network settings.</string>
+    <string name="sku_details_missing">Unable to fetch subscription details</string>
+
+    <string translatable="false" name="product_id_1">me.disconnect.pro.sub.v2.12</string>
+    <string translatable="false" name="product_id_2">me.disconnect.pro.sub.v2.3</string>
+    <string translatable="false" name="product_id_3">me.disconnect.pro.sub.v2.6</string>
+    <string translatable="false" name="product_id_4">me.disconnect.pro.sub.v2.1</string>
+
+    <string-array name="product_ids">
+        <item translatable="false">@string/product_id_1</item>
+        <item translatable="false">@string/product_id_2</item>
+        <item translatable="false">@string/product_id_3</item>
+        <item translatable="false">@string/product_id_4</item>
+    </string-array>
+
+    <plurals name="months">
+        <item quantity="one">1 month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+
+    <string name="upgrade_title">Premium features include</string>
+    <string name="upgrade_protect_3_devices">Protect 3 devices</string>
+    <string name="upgrade_tracker_protection">Tracker Protection</string>
+    <string name="upgrade_video_tutorials">Video tutorials</string>
+    <string name="upgrade_encrypted_internet">Encrypted internet</string>
+    <string name="upgrade_vulnerability_alerts">Vulnerability alerts</string>
+    <string name="upgrade_mask_location">Mask location</string>
+    <string name="upgrade_bottom_title">Recurring billing, cancel anytime</string>
+    <string name="upgrade_terms_and_conditions">If you choose to purchase a subscription, payment will be charged to your Google Play account. Subscriptions automatically renew unless auto-renew is turned off at least 24-hours before the end of the current period at which time your account will be charged. Users can turn off auto-renewal in Account Settings after purchase. More information is available in our <a href="https://disconnect.me/terms">Terms of Use</a> and <a href="https://disconnect.me/privacy">Privacy Policy</a>.</string>
+    <string name="error_purchasing_subscription">Error purchasing subscription</string>
+    <string name="error_purchasing_network_down">Network connection is unavailable. Please check and try again</string>
+
+</resources>

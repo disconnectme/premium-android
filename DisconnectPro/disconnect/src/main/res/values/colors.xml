@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_color">#354C47</color>
+    <color name="disconnect_green">@color/green_disconnect</color>
+    <color name="disconnect_light_green">#d1e3da</color>
+    <color name="disconnect_info_screen_green">#337D63</color>
+
+    <color name="colorPrimary">@color/disconnect_green</color>
+    <color name="colorPrimaryDark">@color/action_bar_color</color>
+    <color name="colorAccent">@android:color/black</color>
+
+    <color name="bottomBarBackground">#3C4554</color>
+
+    <color name="location_button_content">#2c2632</color>
+
+    <color name="green_disconnect">#47A57F</color>
+    <color name="dark_green_disconnect">#3B8C6D</color>
+    <color name="off_white1_disconnect">#F9F9F9</color>
+    <color name="off_white2_disconnect">#FAFAFA</color>
+    <color name="grey2_disconnect">#EFEFEF</color>
+    <color name="grey3_disconnect">#808180</color>
+    <color name="gray4_disconnect">#D0D0D0</color>
+    <color name="purple_disconnect">#3C4554</color>
+    <color name="dark_purple_disconnect">#241A27</color>
+    <color name="red_disconnect">#ED7467</color>
+    <color name="orange_disconnect">#E99F49</color>
+    <color name="yellow_disconnect">#F8F246</color>
+
+    <color name="news_item_summary">#898989</color>
+    <color name="news_item_date">#9A9A9A</color>
+    <color name="date_text_color_read_alert">#9DA2A9</color>
+
+    <color name="settings_background_color">#252932</color>
+    <color name="light_purple_disconnect">#bb3C4554</color>
+</resources>

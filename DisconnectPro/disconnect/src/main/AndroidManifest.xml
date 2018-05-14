@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pro.disconnect.me">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name="org.strongswan.android.logic.StrongSwanApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/d_shield"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="disconnectme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.strongswan.android.ui.LogActivity"
+            android:label="@string/log_title" />
+
+        <service
+            android:name="org.strongswan.android.logic.VpnStateService"
+            android:exported="false" />
+        <service
+            android:name="org.strongswan.android.logic.CharonVpnService"
+            android:exported="false"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".settings.SettingsActivity">
+            android:label="Settings"
+            android:parentActivityName=".TabbedActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pro.disconnect.me.TabbedActivity" />
+        </activity>
+    </application>
+
+</manifest>

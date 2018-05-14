@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pro.disconnect.me.TabbedActivity"
+    >
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:background="@color/bottomBarBackground">
+        <RadioButton
+            android:id="@+id/navigation_news"
+            style="@style/BottomNavigationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_title_news"
+            android:drawableTop="@drawable/news_icon"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/navigation_alerts"
+            style="@style/BottomNavigationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_title_alerts"
+            android:drawableTop="@drawable/alerts_icon"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/navigation_learn"
+            style="@style/BottomNavigationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_title_learn"
+            android:drawableTop="@drawable/learn_icon"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/navigation_protection"
+            style="@style/BottomNavigationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_title_protection"
+            android:drawableTop="@drawable/icn_protection_off"
+            android:layout_weight="1" />
+    </RadioGroup>
+</LinearLayout>
+    <FrameLayout
+    android:id="@+id/busy_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:focusable="true"
+    android:clickable="true"
+    >
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+</FrameLayout>
+</FrameLayout>

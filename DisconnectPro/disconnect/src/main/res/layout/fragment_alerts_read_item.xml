@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/text_margin"
+    android:background="@color/off_white2_disconnect"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="@dimen/text_margin" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey2_disconnect"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_margin_half"
+                android:layout_weight="1"
+                android:textColor="@color/purple_disconnect"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_field"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/date_text_color_read_alert"
+            android:textSize="12sp" />
+        <View
+            android:layout_above="@id/date_field"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey2_disconnect"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
