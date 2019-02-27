@@ -90,8 +90,8 @@
     <string name="sku_details_missing">Unable to fetch subscription details</string>
 
     <string translatable="false" name="product_id_1">me.disconnect.pro.sub.v2.12</string>
-    <string translatable="false" name="product_id_2">me.disconnect.pro.sub.v2.3</string>
-    <string translatable="false" name="product_id_3">me.disconnect.pro.sub.v2.6</string>
+    <string translatable="false" name="product_id_2">me.disconnect.pro.sub.v2.6</string>
+    <string translatable="false" name="product_id_3">me.disconnect.pro.sub.v2.3</string>
     <string translatable="false" name="product_id_4">me.disconnect.pro.sub.v2.1</string>
 
     <string-array name="product_ids">

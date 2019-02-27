@@ -39,7 +39,21 @@
         <activity
             android:name="org.strongswan.android.ui.LogActivity"
             android:label="@string/log_title" />
-
+        <activity
+            android:name="org.strongswan.android.ui.VpnProfileControlActivity"
+            android:theme="@style/TransparentActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="org.strongswan.android.action.START_PROFILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.strongswan.android.action.DISCONNECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <service
             android:name="org.strongswan.android.logic.VpnStateService"
             android:exported="false" />

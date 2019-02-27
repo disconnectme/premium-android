@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 Tobias Brunner
- * Hochschule fuer Technik Rapperswil
+ * HSR Hochschule fuer Technik Rapperswil
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -51,10 +51,10 @@ public class LogActivity extends AppCompatActivity
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
 		int id = item.getItemId();
-		if ( id == android.R.id.home ) {
+		if(id == android.R.id.home){
 			finish();
 			return true;
-		} else if (id == R.id.menu_send_log ){
+		}else if(id == R.id.menu_send_log){
 			File logfile = new File(getFilesDir(), CharonVpnService.LOG_FILE);
 			if (!logfile.exists() || logfile.length() == 0)
 			{
@@ -79,8 +79,9 @@ public class LogActivity extends AppCompatActivity
 			intent.putExtra(Intent.EXTRA_STREAM, LogContentProvider.createContentUri());
 			startActivity(Intent.createChooser(intent, getString(R.string.send_log)));
 			return true;
-		} else{
+		}else{
 			return super.onOptionsItemSelected(item);
 		}
+
 	}
 }

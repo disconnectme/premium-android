@@ -406,7 +406,7 @@ public class ProtectionFragment extends Fragment implements VpnStateService.VpnS
         int text = show_instructions ? org.strongswan.android.R.string.show_remediation_instructions : org.strongswan.android.R.string.show_log;
 
         mErrorDialog = new AlertDialog.Builder(getActivity())
-                .setMessage(getString(org.strongswan.android.R.string.error_introduction) + " " + getString(textid))
+                .setMessage(getString(org.strongswan.android.R.string.error_format) + " " + getString(textid))
                 .setCancelable(false)
                 .setNeutralButton(text, new DialogInterface.OnClickListener()
                 {

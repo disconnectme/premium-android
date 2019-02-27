@@ -121,9 +121,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/text_margin"
+                android:visibility="gone"
                 app:layoutManager="LinearLayoutManager"
                 tools:context="pro.disconnect.me.billing.UpgradeFragment"
                 tools:listitem="@layout/fragment_subscription" />
+
+            <ImageView
+                android:id="@+id/cta_image"
+                android:layout_width="wrap_content"
+                android:layout_height="366dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/rocket" />
 
             <TextView
                 android:layout_width="match_parent"

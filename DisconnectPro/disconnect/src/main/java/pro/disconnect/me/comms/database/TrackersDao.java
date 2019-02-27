@@ -16,7 +16,7 @@ public interface TrackersDao {
     @Insert(onConflict = REPLACE)
     void save(List<Tracker> trackers);
 
-    @Query("SELECT * FROM tracker ORDER BY dateTimeStamp" )
+    @Query("SELECT * FROM tracker ORDER BY dateTimeStamp DESC" )
     LiveData<List<Tracker>> load();
 
     @Query("DELETE FROM tracker")

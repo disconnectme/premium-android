@@ -29,6 +29,7 @@ import android.widget.Toast;
 
 import com.android.billingclient.api.BillingClient;
 
+import org.strongswan.android.ui.VpnProfileControlActivity;
 import org.strongswan.android.data.VpnProfile;
 import org.strongswan.android.data.VpnProfileDataSource;
 import org.strongswan.android.logic.VpnStateService;
@@ -214,7 +215,15 @@ public class TabbedActivity extends MainActivity implements VpnStateService.VpnS
     }
 
     public void startVpn(){
-        startVpnProfile(mProfile, true);
+        if (mProfile != null)
+        {
+            Intent intent = new Intent(this, VpnProfileControlActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setAction(VpnProfileControlActivity.START_PROFILE);
+            intent.putExtra(VpnProfileControlActivity.EXTRA_VPN_PROFILE_ID, mProfile.getUUID().toString());
+            startActivity(intent);
+            return;
+        }
     }
 
     public VpnProfile getProfile(){

@@ -16,6 +16,7 @@ import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,6 +54,7 @@ public class UpgradeFragment extends DialogFragment {
     private SubscriptionRecyclerViewAdapter mAdapter;
     private List<SubsItem> mSubsItems;
 
+
     private View mBusyView;
 
     /**
@@ -86,7 +88,7 @@ public class UpgradeFragment extends DialogFragment {
         View view = inflater.inflate(R.layout.fragment_upgrade, container, false);
 
         // Set the adapter
-        RecyclerView recyclerView = view.findViewById(R.id.list);
+        final RecyclerView recyclerView = view.findViewById(R.id.list);
         Context context = view.getContext();
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
 
@@ -110,6 +112,17 @@ public class UpgradeFragment extends DialogFragment {
         mBusyView = view.findViewById(R.id.busy_container);
         ProgressBar spinner = (ProgressBar)view.findViewById(R.id.progress_bar);
         spinner.getIndeterminateDrawable().setColorFilter(Color.GRAY, android.graphics.PorterDuff.Mode.MULTIPLY);
+
+        view.findViewById(R.id.cta_image).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                v.setVisibility(View.GONE);
+                recyclerView.setVisibility(View.VISIBLE);
+
+            }
+        });
 
         return view;
     }
